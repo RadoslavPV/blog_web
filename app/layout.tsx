@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inknut_Antiqua } from "next/font/google";
 import "./globals.css";
+import Header from "./components/heaader/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inknut_antiqua = Inknut_Antiqua({
+  subsets: ["latin"],
+  weight: ["300", "500"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inknut_antiqua.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

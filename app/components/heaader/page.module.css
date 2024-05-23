@@ -1,0 +1,68 @@
+.headerWrapper {
+    display: flex;
+    background-color: #6F4436;
+    gap: 20px;
+    padding: 10px 15px;
+    border-radius: 70px;
+    width: 85%;
+    margin: auto;
+}
+
+.linkElement:hover {
+    cursor: pointer;
+}
+
+.linkElement {
+    all: unset;
+    color: #DFCCAF;
+    background-color: #6F4436;
+    font-weight: 500;
+}
+
+.inputWrapper input::placeholder {
+    color: #3C2F2F;
+    font-family: "Inknut_Antiqua";
+    font-size: small;
+    font-weight: 600;
+}
+
+
+.inputWrapper {
+    position: relative;
+    background-color: #DFCCAF;
+    margin-left: auto;
+    width: 30%;
+    border-radius: 70px; /* Ensures the entire wrapper has rounded corners */
+    overflow: hidden; /* Ensures no overflow of child elements */
+}
+
+.inputWrapper input {
+    all: unset;
+    width: calc(100% - 50px); /* Adjusts width to leave space for the button */
+    font-size: small;
+    padding-left: 15px;
+    padding-right: 15px; /* Adds padding to the right to avoid text overlap */
+    border-radius: 70px;
+    background-color: #DFCCAF;
+    height: 40px; /* Ensures consistent height */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+.inputWrapper button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #DFCCAF;
+    background-image: url('../../../public/icons/search-icon.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    width: 40px; /* Sets button width */
+    height: 40px; /* Sets button height to match input height */
+    cursor: pointer;
+    border-top-right-radius: 70px; /* Matches the input border radius */
+    border-bottom-right-radius: 70px; /* Matches the input border radius */
+}

@@ -1,5 +1,7 @@
 .footer {
     color: #6F4436;
+    display: flex;
+    justify-content: center;
     background-color: #DFCCAF;
     width: 100%;
 }

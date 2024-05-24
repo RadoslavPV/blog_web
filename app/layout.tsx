@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inknut_Antiqua } from "next/font/google";
 import "./globals.css";
 import Header from "./components/heaader/Header";
+import Footer from "./components/footer/Footer";
 
 const inknut_antiqua = Inknut_Antiqua({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inknut_antiqua.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

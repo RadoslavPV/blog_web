@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: #DFCCAF;
     width: 100%;
+    margin-top: 40px;
 }
 
 .footer h6 {
@@ -13,5 +14,4 @@
     background-color: #DFCCAF;
     padding: 35px 0px;
     width: 100%;
-    bottom: 0;
 }

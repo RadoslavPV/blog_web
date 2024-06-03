@@ -1,0 +1,29 @@
+.listBlogWrapper{
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 260px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.titleImg {
+    max-width: 100%;
+    width: 80%;
+    border: 10px solid;
+    border-color: #6F4436;
+    border-radius: 20%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.blogTitle {
+    position: absolute;
+    text-align: center;
+    max-width: 120%;
+    width: 300px;
+    background-color: #DFCCAF;
+    z-index: 1;
+    margin-top: 150px;
+    transform: translateX(-6%)
+}

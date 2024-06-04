@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 export default function Header() {
   return (
-    <div className={styles.headerWrapper}>
+    <header className={styles.headerWrapper}>
       <Link className={styles.linkElement} href={"/"}>
         Home
       </Link>
@@ -14,6 +14,6 @@ export default function Header() {
         <input placeholder="Search..." />
         <button type="submit"></button>
       </div>
-    </div>
+    </header>
   );
 }
